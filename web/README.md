@@ -53,3 +53,6 @@ db.Books.save({'categoryId':db.Category.findOne({categoryName:'移动端'})._id,
 
 //OS
 db.Books.save({'categoryId':db.Category.findOne({categoryName:'操作系统'})._id, 'title':'Shell脚本编程诀窍', 'coverURL':'', 'description':'', 'borrower':'', account:''});
+
+// Init User
+db.AccountModel.save({"accountName" : "周飞","accountWeChatId" : "fzhou@cccis.com", "email" : "fzhou@cccis.com",})

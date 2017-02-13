@@ -11,6 +11,7 @@ var parse = require('co-busboy');
 var fs = require('fs');
 var UUID_V1 = require('uuid/v1');
 
+// 如果本地测试，需要把此方法最后一行放开，其他注释掉，越过验证。
 router.get('/getUser', function *() {
     let user = yield wechatAPI.getUser(this.query.code);
      if (!user.errcode) {
