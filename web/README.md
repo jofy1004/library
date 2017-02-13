@@ -1,3 +1,4 @@
+// 数据脚本
 // Init Category:
 db.Category.save({'categoryName':'业务需求'});
 db.Category.save({'categoryName':'测试'});
